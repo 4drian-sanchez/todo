@@ -1,0 +1,15 @@
+.todo-item {
+
+    @extend .mb-3;
+    @extend .py-2;
+    @extend .w-100;
+
+    cursor: default;
+        
+    &:focus {
+        background-color: none;
+        border: 0.1rem solid #0230478c;
+        box-shadow: none;
+
+    }
+}

@@ -1,0 +1,14 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Sigmar&display=swap');
+$font-family-sans-serif: 'Poppins', sans-serif;
+$headings-font-family: 'Sigmar', cursive;
+
+/* colors */
+$primary: #023047;
+$body-bg: #33333309;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+/* 
+.row-gap-1 {
+    column-gap: 1rem;
+} */
