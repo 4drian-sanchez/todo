@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     htmlPurge({
-      content: ["./src/**/*.jsx", "./src/**/*.scss"],
+      content: ["./src/**/*.jsx", "./src/**/*.scss", './**/*.html'],
     }),
   ]
 })
