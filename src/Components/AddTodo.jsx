@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Alert } from "./Alert";
 
 
-export const AddTodo = ( { addTodo } ) => {
+export const AddTodo = ({ addTodo }) => {
 
     const [inputValue, setinputValue] = useState('');
     const [alert, setAlert] = useState(false);
@@ -18,7 +18,7 @@ export const AddTodo = ( { addTodo } ) => {
         }
         setAlert(false)
 
-        const todo =  {
+        const todo = {
             value: inputValue.trim(),
             id: new Date().getTime() * 3,
             done: false
@@ -48,8 +48,8 @@ export const AddTodo = ( { addTodo } ) => {
                 </div>
                 <input type="submit" value="Guardar" className="btn btn-outline-primary mt-2" />
             </form>
-            { ( alert ) && ( <Alert menssage={'Debes ingresar almenos un caracter'} bgColor={'danger'}/>) }
-            
+            {(alert) && (<Alert menssage={'Debes ingresar almenos un caracter'} />)}
+
         </>
     )
 }
